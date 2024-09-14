@@ -1,0 +1,301 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f5d1d1, #f8cdda);
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 3rem;
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ant-card {
+    border-radius: 15px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ant-card img {
+    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.personal-message-card {
+    background: #ffe6e6;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.countdown-display {
+    font-size: 2.5rem;
+    color: #ff6b6b;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 20px 0;
+}
+
+/* .video-section video {
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+} */
+
+/* .video-section video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+} */
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-color: #f9f3f3; /* Optional background color */
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1000px; /* Control maximum video width */
+    height: auto;
+}
+
+.video-fit {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 80vh; /* Ensures the video doesn't exceed 80% of the viewport height */
+    object-fit: cover; /* Ensures the video fits within its container while maintaining its aspect ratio */
+    border-radius: 15px; /* Optional for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better aesthetics */
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.personal-message-card {
+    background: #fff9f9;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.personal-message-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.message-container {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+
+.closing-message {
+    margin-top: 30px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #ff6b6b;
+    font-weight: bold;
+    font-style: italic;
+    background: #fff0f0;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* Optional: Subtle animation for the wishes card */
+.modern-card {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.friends-messages-static {
+    padding: 30px;
+    background-color: #f9f3f3;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.message-card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message-card h3 {
+    color: #ff6b6b;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.message-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.sender-info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.sender-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sender-info span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.message-card:hover {
+    transform: translateY(-5px);
+}
+
+.quotes-section {
+    text-align: center;
+    background-color: #ffebeb;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.quote-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.quote-text {
+    font-style: italic;
+    color: #555;
+}
+
+.music-player {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.music-player audio {
+    width: 100%;
+    max-width: 400px;
+}
